@@ -89,17 +89,19 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // ---------------- Lenis Smooth Scrolling Fix ----------------
-  const lenis = new Lenis({
-    smooth: true,
-    lerp: 0.1, // Adjust the smoothness
-    wheelMultiplier: 1, // Adjust the scroll speed
-    infinite: false,
-  });
-
-  function raf(time) {
-    lenis.raf(time);
-    requestAnimationFrame(raf);
-  }
-
-  requestAnimationFrame(raf);
+const lenis = new Lenis({
+  smooth: true,
+  duration: 1.2, // Adjust to make scrolling feel more natural
+  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Smoother easing
+  wheelMultiplier: 0.8, // Reduce if scrolling is too fast
+  touchMultiplier: 1.5, // Adjust touch scroll speed
+  infinite: false,
 });
+
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
+
