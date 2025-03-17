@@ -602,7 +602,10 @@ main {
 .avatars {
   display: flex;
   gap: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  position: relative;
+  bottom: 20px;
+  left: 20px;
 }
 
 .avatars img {
