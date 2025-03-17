@@ -5,6 +5,10 @@
   margin-top: 20px;
   color: #888;
 }
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
 body,
 html {
   margin: 0;
@@ -236,6 +240,11 @@ main {
   align-items: center;
   margin-top: 30px;
   flex-wrap: wrap;
+}
+.content-wrapper img {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
 /* Left Content */
@@ -750,7 +759,7 @@ main {
   }
 
   .nav-menu {
-    display: none;
+    display: block;
     flex-direction: column;
     position: absolute;
     top: 60px; /* Adjust based on header height */
@@ -763,6 +772,11 @@ main {
 
   .nav-menu.show {
     display: flex; /* Show menu when toggled */
+  }
+  .avatars {
+    position: relative;
+    bottom: 30px;
+    left: 20px;
   }
 }
 
@@ -812,15 +826,5 @@ main {
   .cta-button {
     position: relative;
     top: -10px;
-  }
-}
-
-@media screen and(min-wdith:1024px) and (max-width: 2560px) {
-  .content-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 30px;
-    flex-wrap: nowrap;
   }
 }
