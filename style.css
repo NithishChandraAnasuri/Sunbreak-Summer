@@ -288,7 +288,11 @@ main {
 
 .avatars {
   display: flex;
-  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+  position: relative;
+  bottom: 20px;
+  left: 20px;
 }
 
 .avatars img {
