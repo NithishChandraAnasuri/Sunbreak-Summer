@@ -63,8 +63,8 @@ This project is licensed under the **MIT License** – feel free to use and modi
 ## 📬 Contact
 
 For any suggestions or collaborations, feel free to reach out:
-- **GitHub**: [YourGitHubProfile](https://github.com/yourusername)
-- **Email**: your.email@example.com
+- **GitHub**: https://github.com/NithishChandraAnasuri
+- **Email**: Nithishchandra2k@gmail.com
 
 Enjoy the summer vibes with **SunBreak-Summer**! 🌴☀️
 
